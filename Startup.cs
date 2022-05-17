@@ -27,6 +27,8 @@ namespace WebApi
 
             // configure DI for application services
             services.AddScoped<IUserService, UserService>();
+            services.AddScoped<IClientService, ClientService>();
+
         }
 
         // configure the HTTP request pipeline
